@@ -1,0 +1,237 @@
+/* General Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #feb47b;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  
+  header nav {
+    margin-top: 15px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    background-color: #feb47b;
+    border-radius: 5px;
+  }
+  
+  header nav a.active {
+    background-color: #feb47b;
+    border-radius: 5px;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  article {
+    margin-bottom: 30px;
+  }
+  
+  .article-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .article-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .article-header p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .article-header img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #feb47b;
+    padding-bottom: 10px;
+  }
+  
+  .article p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  ol {
+    padding-left: 20px;
+  }
+  
+  ol li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    header nav {
+      text-align: center;
+    }
+  
+    header nav a {
+      margin: 5px;
+      font-size: 0.9rem;
+    }
+  
+    main {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .article-header h1 {
+      font-size: 2rem;
+    }
+  
+    .article-header img {
+      max-height: 250px;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Button Styling */
+  a.button {
+    display: inline-block;
+    background-color: #feb47b;
+    color: #1c1c1c;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  a.button:hover {
+    background-color: #ff7e5f;
+    transform: translateY(-2px);
+  }
+  
+  a.button:active {
+    background-color: #ff7e5f;
+    transform: translateY(2px);
+  }
+  
+  /* Section for Article List */
+  .article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .article-list .article-summary {
+    width: 48%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .article-list .article-summary:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article-list .article-summary img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .article-list .article-summary h3 {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    color: #333;
+  }
+  
+  .article-list .article-summary p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .article-list .article-summary a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #feb47b;
+    font-weight: bold;
+  }
+  
+  .article-list .article-summary a:hover {
+    color: #ff7e5f;
+    text-decoration: underline;
+  }
+  
